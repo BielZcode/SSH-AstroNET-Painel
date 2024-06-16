@@ -16,7 +16,7 @@ Para instalar use o comando abaixo:
 
 apt update -y && apt upgrade -y && wget
 https://raw.githubusercontent.com/BielZcode/SSH-AstroNET-Painel/main/install.sh
-&& chmod 777 Plus && ./Plus
+&& chmod ./ssh_manager_astronet.sh
 
 #Acessa Root
 
