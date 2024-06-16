@@ -12,9 +12,16 @@ painel ssh beta Painel
 
 • Grupo Telegram t.me/astronetpsshpaine📞
 Para instalar use o comando abaixo:
+```sh
+apt update -y && apt upgrade -y && wget
+https://raw.githubusercontent.com/BielZcode/SSH-AstroNET-Painel/main/install.sh
+&& chmod 777 Plus && ./Plus
+```sh
+
+#Acessa Root
 
 ```sh
-bash <(wget -qO- https://raw.github.com/BielZcode/SSH-AstroNET-Painel/blob/main/install.sh)
-```
+wget https://raw.githubusercontent.com/BielZcode/SSH-AstroNET-Painel/main/install.sh && chmod 777 senharoot.sh && ./senharoot.sh
+```sh
 
 Grupo de  suporte: https://t.me/astronetpsshpainel
