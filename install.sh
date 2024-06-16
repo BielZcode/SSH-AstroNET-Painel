@@ -17,6 +17,8 @@ NC='\033[0m' # Sem cor
 # Arquivos de configuração
 SSH_CONFIG_FILE="ssh_servers.txt"
 USERS_FILE="ssh_users.txt"
+SSH_MANAGER_SCRIPT="ssh_manager_astronet.sh"
+SSH_MANAGER_URL="https://raw.githubusercontent.com/BielZcode/SSH-AstroNET-Painel/main/ssh_manager_astronet.sh"  # Substitua pelo URL correto
 
 # Verificar e instalar pacotes necessários
 install_packages() {
@@ -54,8 +56,22 @@ create_config_files() {
     fi
 }
 
+# Função para baixar o script ssh_manager_astronet.sh
+download_ssh_manager_script() {
+    echo_color $BLUE "Baixando o script ssh_manager_astronet.sh..."
+    if ! curl -fsSL -o $SSH_MANAGER_SCRIPT $SSH_MANAGER_URL; then
+        echo_color $RED "Falha ao baixar o script ssh_manager_astronet.sh."
+        exit 1
+    fi
+    chmod +x $SSH_MANAGER_SCRIPT
+    echo_color $GREEN "Script ssh_manager_astronet.sh baixado e pronto para uso."
+}
+
 # Executar a função de instalação de pacotes
 install_packages
 
 # Executar a função de criação de arquivos de configuração
 create_config_files
+
+# Executar a função para baixar o script ssh_manager_astronet.sh
+download_ssh_manager_script
