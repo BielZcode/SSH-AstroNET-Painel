@@ -14,7 +14,7 @@ painel ssh beta Painel
 Para instalar use o comando abaixo:
 
 ```sh
-bash <(wget -qO- https://raw.githubusercontent.com/Penguinehis/DragonCoreSSH-Beta/main/install.sh)
+bash <(wget -qO- https://github.com/BielZcode/SSH-AstroNET-Painel/blob/17d31ebbf8bd9b7acd9f1f75e7214e7fd4899926/install.sh
 ```
 
 Grupo de  suporte: https://t.me/astronetpsshpainel
